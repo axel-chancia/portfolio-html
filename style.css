@@ -1,13 +1,13 @@
-/* Palette moderne pour développeur */
+
 :root {
-  --bg-color: #0f172a;        /* Fond principal (gris bleu nuit) */
-  --text-color: #f1f5f9;      /* Texte principal (gris clair) */
-  --accent: #6366f1;          /* Violet doux (indigo) */
-  --accent-hover: #4f46e5;    /* Violet plus profond */
-  --card-bg: #1e293b;         /* Fond des cartes */
-  --card-border: #334155;     /* Bordure des cartes */
-  --header-bg: #1e1b4b;       /* Fond du header */
-  --footer-bg: #111827;       /* Fond du footer */
+  --bg-color: #0f172a;        
+  --text-color: #f1f5f9;    
+  --accent: #6366f1;          
+  --accent-hover: #4f46e5;    
+  --card-bg: #1e293b;        
+  --card-border: #334155;     
+  --header-bg: #1e1b4b;       
+  --footer-bg: #111827;       
 }
 
 body {
