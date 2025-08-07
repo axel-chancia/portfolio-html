@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio • Axel Chancias</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio • DOUMBA Arsel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
   <header>
-    <img src="/image/arsel.jpg" alt="Photo de Axel Chancias" class="profile-pic">
+    <img src="/image/arsel.jpg" alt="Photo de DOUMBA Arsel" class="profile-pic" />
     <h1>DOUMBA Arsel</h1>
-    <p>Développeur Web frontend junior | Portfolio de projets hébergés sur Vercel</p>
+    <p>Développeur Web passionné • Créateur de solutions modernes</p>
   </header>
 
-  <section id="projects">
-    <h2>Mes Projets</h2>
+  <main class="portfolio-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="project-thumb" data-id="facture">
+        <img src="/image/facture+.jpg" alt="Facture+">
+      </div>
+      <div class="project-thumb" data-id="xori">
+        <img src="/image/xori.jpg" alt="Xori Group">
+      </div>
+      <div class="project-thumb" data-id="palace">
+        <img src="/image/palace.jpg" alt="Palace Club">
+      </div>
+      <div class="project-thumb" data-id="primeprompts">
+        <img src="/image/primeprompt.jpg" alt="My PrimePrompts">
+      </div>
+    </aside>
 
-    <div class="project">
-      <img src="/image/facture+.jpg" alt="Facture+" class="project-img">
-      <h3>Facture+</h3>
-      <p>Plateforme de génération des documents préforma et des factures.</p>
-      <a href="https://factures-tau.vercel.app/" target="_blank">Voir le projet</a>
-    </div>
+    <section class="project-display">
 
-    <div class="project">
-      <img src="/image/xori.jpg" alt="Xori Group" class="project-img">
-      <h3>Xori Group</h3>
-      <p>Site vitrine professionnel du groupe Xori, mettant en avant ses services et son image de marque.</p>
-      <a href="https://xori-group.vercel.app/" target="_blank">Voir le projet</a>
-    </div>
+      <div class="project-card active" id="facture">
+        <img src="/image/facture+.jpg" alt="Facture+" class="project-img" />
+        <h3>Facture+</h3>
+        <p>Plateforme de génération de documents préformatés et de factures automatisées.</p>
+        <div class="tech-icons">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg" alt="React" />
+          <span>React</span>
+        </div>
+        <a href="https://factures-tau.vercel.app/" target="_blank">Voir le projet</a>
+      </div>
 
-    <div class="project">
-      <img src="/image/palace.jpg" alt="Palace Club" class="project-img">
-      <h3>Palace Club</h3>
-      <p>Site de réservation des chambres de luxes et appartement dans les hotels.</p>
-      <a href="https://palace-club.vercel.app/" target="_blank">Voir le projet</a>
-    </div>
+      <div class="project-card" id="xori">
+        <img src="/image/xori.jpg" alt="Xori Group" class="project-img" />
+        <h3>Xori Group</h3>
+        <p>Site vitrine professionnel du groupe Xori pour valoriser ses services et son image de marque.</p>
+        <div class="tech-icons">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nextdotjs.svg" alt="Next.js" />
+          <span>Next.js</span>
+        </div>
+        <a href="https://xori-group.vercel.app/" target="_blank">Voir le projet</a>
+      </div>
 
-    <div class="project">
-      <img src="/image/primeprompt.jpg" alt="My PrimePrompts" class="project-img">
-      <h3>My PrimePrompts</h3>
-      <p>Application d’organisation et de génération de prompts pour des modèles d’intelligence artificielle.</p>
-      <a href="https://my-primeprompts.vercel.app/" target="_blank">Voir le projet</a>
-    </div>
-  </section>
+      <div class="project-card" id="palace">
+        <img src="/image/palace.jpg" alt="Palace Club" class="project-img" />
+        <h3>Palace Club</h3>
+        <p>Plateforme de réservation de chambres de luxe et appartements haut de gamme.</p>
+        <div class="tech-icons">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nextdotjs.svg" alt="Next.js" />
+          <span>Next.js</span>
+        </div>
+        <a href="https://palace-club.vercel.app/" target="_blank">Voir le projet</a>
+      </div>
+
+      <div class="project-card" id="primeprompts">
+        <img src="/image/primeprompt.jpg" alt="My PrimePrompts" class="project-img" />
+        <h3>My PrimePrompts</h3>
+        <p>Application de gestion et génération de prompts pour l'IA.</p>
+        <div class="tech-icons">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML" />
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS" />
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript" />
+          <span>HTML • CSS • JavaScript</span>
+        </div>
+        <a href="https://my-primeprompts.vercel.app/" target="_blank">Voir le projet</a>
+      </div>
+
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 DOUMBA Arsel créateur de contenue • <a href="mailto:amakita124@gmail.com">amakita124@gmail.com</a></p>
+    <p>© 2025 DOUMBA Arsel • <a href="mailto:amakita124@gmail.com">amakita124@gmail.com</a></p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
